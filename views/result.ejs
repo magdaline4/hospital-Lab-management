@@ -1,0 +1,142 @@
+<%-include('header')%>
+    <style>
+      
+      
+    
+        .container .content{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .content .image-box{
+            max-width: 55%;
+        }
+        .content .image-box img{
+            width: 100%;
+        }
+       
+        .content form{
+            width: 40%;
+           
+           float: right;
+        }
+        .content .input-box{
+            height: 50px;
+            width: 100%;
+            margin: 16px 0;
+            position: relative;
+        }
+        h1{
+            color: darkcyan;
+           
+        }
+        .button{
+            background-color:rgb(167, 255, 159); 
+            outline: none;
+            border: none;
+            height: 30px;
+            width: 70px;
+            border-radius: 30px;
+            color: rgb(0, 0, 0);
+        }    
+        
+    </style>
+</head>
+<!--Navbar Start-->
+
+<nav class="navbar navbar-expand-lg p-3 mb-2 p-3 mb-2 bg-info text-white ">
+    <div  class="container-fluid ">
+      <a class="navbar-brand text-white fs-3 " href="/">Rhock Hospital</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end bg-info text-danger-emphasis " tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header text-white border-bottom">
+          <h5 class="offcanvas-title " id="offcanvasDarkNavbarLabel">Spice Delight Bistro</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+          <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+            <li class="nav-item mx-2">
+              <a class="nav-link active text-dark active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                For Patient
+              </a>
+            <ul class="dropdown-menu bg-info-subtle">
+              <li><a class="dropdown-item " href="/test">Test Booking</a></li>
+              
+            </ul>
+            </li>
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Lab Test
+              </a>
+            <ul class="dropdown-menu bg-info-subtle">
+              <li><a class="dropdown-item " href="/blood">Blood Test</a></li>
+              <li><a class="dropdown-item" href="/urine">Urine Text</a></li>
+              <li><a class="dropdown-item" href="/imaging">Imaging Test</a></li>
+              <li><a class="dropdown-item" href="/micro">Microbiology Test</a></li>
+              <li><a class="dropdown-item" href="/patho">Pathology Test</a></li>
+              <li><a class="dropdown-item" href="/genetic">Genetic Test</a></li>
+              <li><a class="dropdown-item" href="/cardiac">Cardiac Test</a></li>
+              <li><a class="dropdown-item" href="/infectious">Infectious Disease Test</a></li>
+  
+            </ul>
+            </li>
+           
+            <li class="nav-item mx-1">
+              <a class="nav-link text-white " aria-current="page" href="/service">Service</a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link text-white " aria-current="page" href="/test">Book a Test</a>
+            </li>
+            <li class="nav-item mx-1">
+                <a class="nav-link text-white " aria-current="page" href="/about">About Us</a>
+              </li>
+              
+              <li class="nav-item mx-1">
+                <a class="nav-link text-white " aria-current="page" href="/contact">Contact Us</a>
+              </li>
+              
+              
+              
+            </li>
+          </ul>
+        <!--Login-->
+          <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-2"> 
+            <a href="/login" class="text-info text-decoration-none px-3 py-2  rounded-4" style="background-color: beige;">Login</a>
+          
+          </div>
+        </div>
+      </div> 
+    </div>
+  </nav><br><br>
+  <!--NavBar End-->
+  
+<body class="bg-info-subtle">
+    <div class="container" style="background-color: skyblue; border-radius: 30px;">
+        <div class="content">
+            <div class="image-box" >
+                <img src="result.png" alt="" style="margin-left: 50px;"> 
+            </div>
+        
+    
+    <form action="#" >
+       <h1>Accesing Results</h1><br><br><br>
+       <div style="margin-left: 50px;">
+       <label>Patient Name</label><br>
+       <input type="text" required><br><br><br>
+       <label>Appoinmant No</label><br>
+       <input type="text" required>
+       <br><br><br>
+       <button class="button" style="margin-left: 55px;">Result</button>
+       </div>
+    </div>
+          
+       </form>
+    </div>
+       
+    </div>
+<%-include('footer')%>

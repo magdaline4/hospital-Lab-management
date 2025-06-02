@@ -1,0 +1,159 @@
+<%-include('header')%>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.con {
+    max-width: 500px;
+    margin: 50px auto;
+   
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-left: 160px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 150px;
+}
+
+button:hover {
+    background-color: rgb(167, 255, 159);
+}
+
+    </style>
+</head>
+
+<!--Navbar Start-->
+
+<nav class="navbar navbar-expand-lg p-3 mb-2 p-3 mb-2 bg-info text-white ">
+  <div  class="container-fluid ">
+    <a class="navbar-brand text-white fs-3 " href="/">Rhock Hospital</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end bg-info text-danger-emphasis " tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header text-white border-bottom">
+        <h5 class="offcanvas-title " id="offcanvasDarkNavbarLabel">Spice Delight Bistro</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+        <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+          <li class="nav-item mx-2">
+            <a class="nav-link active text-white" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              For Patient
+            </a>
+          <ul class="dropdown-menu bg-info-subtle">
+            <li><a class="dropdown-item " href="/test">Test Booking</a></li>
+            
+          </ul>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Lab Test
+            </a>
+          <ul class="dropdown-menu bg-info-subtle">
+            <li><a class="dropdown-item " href="/blood">Blood Test</a></li>
+            <li><a class="dropdown-item" href="/urine">Urine Text</a></li>
+            <li><a class="dropdown-item" href="/imaging">Imaging Test</a></li>
+            <li><a class="dropdown-item" href="/micro">Microbiology Test</a></li>
+            <li><a class="dropdown-item" href="/patho">Pathology Test</a></li>
+            <li><a class="dropdown-item" href="/genetic">Genetic Test</a></li>
+            <li><a class="dropdown-item" href="/cardiac">Cardiac Test</a></li>
+            <li><a class="dropdown-item" href="/infectious">Infectious Disease Test</a></li>
+
+          </ul>
+          </li>
+         
+          <li class="nav-item mx-1">
+            <a class="nav-link text-white " aria-current="page" href="/service">Service</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link text-white " aria-current="page" href="/test">Book a Test</a>
+          </li>
+          <li class="nav-item mx-1">
+              <a class="nav-link text-white " aria-current="page" href="/about">About Us</a>
+            </li>
+            
+            <li class="nav-item mx-1">
+              <a class="nav-link text-dark active " aria-current="page" href="/contact">Contact Us</a>
+            </li>
+            
+            
+            
+          </li>
+        </ul>
+      <!--Login-->
+        <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-2"> 
+          <a href="/login" class="text-info text-decoration-none px-3 py-2  rounded-4" style="background-color: beige;">Login</a>
+        
+        </div>
+      </div>
+    </div> 
+  </div>
+</nav>
+<!--NavBar End-->
+
+<body class="bg-info-subtle" >
+    <div class="container con" style="background-color: rgb(167, 255, 159);;">
+        <h1>Contact Us</h1>
+        <form action="/submit_form" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email-ID:</label>
+                <input type="email" id="email" name="Email-Id" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="Message" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <button class="bg-info" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <%-include('footer')%>

@@ -1,0 +1,122 @@
+<%-include('header')%>
+    <style>
+       #topar{
+        background-color: lightskyblue;
+        height: 75px;
+        width: 100%;
+       }
+      h1{
+        color: azure;
+        text-align: center;
+      }
+    
+      ol li{
+        letter-spacing: 3px;
+        margin-right: 5%px;
+      
+      }
+     #bottom{
+        color: darkblue;
+        margin-top: 7%;
+     }
+      img{
+        float: right;
+       margin-top: 9%;
+       width: 600px;
+      }
+    </style>
+
+
+</head>
+<body class="bg-info-subtle">
+  <!--Navbar Start-->
+
+<nav class="navbar navbar-expand-lg p-3 mb-2 p-3 mb-2 bg-info text-white ">
+  <div  class="container-fluid ">
+    <a class="navbar-brand text-white fs-3 " href="/">Rhock Hospital</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end bg-info text-danger-emphasis " tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header text-white border-bottom">
+        <h5 class="offcanvas-title " id="offcanvasDarkNavbarLabel">Spice Delight Bistro</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+        <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+          <li class="nav-item mx-2">
+            <a class="nav-link active text-dark active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              For Patient
+            </a>
+          <ul class="dropdown-menu bg-info-subtle">
+            <li><a class="dropdown-item " href="/test">Test Booking</a></li>
+            
+          </ul>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Lab Test
+            </a>
+          <ul class="dropdown-menu bg-info-subtle">
+            <li><a class="dropdown-item " href="/blood">Blood Test</a></li>
+            <li><a class="dropdown-item" href="/urine">Urine Text</a></li>
+            <li><a class="dropdown-item" href="/imaging">Imaging Test</a></li>
+            <li><a class="dropdown-item" href="/micro">Microbiology Test</a></li>
+            <li><a class="dropdown-item" href="/patho">Pathology Test</a></li>
+            <li><a class="dropdown-item" href="/genetic">Genetic Test</a></li>
+            <li><a class="dropdown-item" href="/cardiac">Cardiac Test</a></li>
+            <li><a class="dropdown-item" href="/infectious">Infectious Disease Test</a></li>
+
+          </ul>
+          </li>
+         
+          <li class="nav-item mx-1">
+            <a class="nav-link text-white " aria-current="page" href="/service">Service</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link text-white " aria-current="page" href="/test">Book a Test</a>
+          </li>
+          <li class="nav-item mx-1">
+              <a class="nav-link text-white " aria-current="page" href="/about">About Us</a>
+            </li>
+            
+            <li class="nav-item mx-1">
+              <a class="nav-link text-white " aria-current="page" href="/contact">Contact Us</a>
+            </li>
+            
+            
+            
+          </li>
+        </ul>
+      <!--Login-->
+        <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-2"> 
+          <a href="/login" class="text-info text-decoration-none px-3 py-2  rounded-4" style="background-color: beige;">Login</a>
+        
+        </div>
+      </div>
+    </div> 
+  </div>
+</nav>
+<!--NavBar End-->
+
+    <div id="topar" style="margin-top: -8px;">
+        <h1 >Laboratory Services</h1>
+    </div>
+    <img src="service1.png" alt="">
+    <div id="bottom">
+    <ol> <li>Treating patiend and monitoring their response to treatment.</li><br><br><br>
+    <li>Monitoring the development and spread of infections and dangerous pathogens.</li><br><br><br>
+    <li>
+        Decidind effective control measures against major prevalent disease.
+    </li><br><br><br>
+    <li>Blood tissue and body fluids cn be chemicaly analyzed and examied for foreign organisms.</li><br><br><br>
+        <Li>Deciding health priorites and allocating resoures.</Li><br><br><br>
+    <li>Operate a regional blood transfusion center.Prepar reagents,controls,standard solutions</li>
+    
+    </ol>
+    
+</div>
+<%-include('footer')%>

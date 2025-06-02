@@ -1,0 +1,172 @@
+<%-include('header')%>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+           
+            
+            text-align: center;
+            padding: 1em 0;
+        }
+        main {
+            padding: 2em;
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: rgb(167, 255, 159);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 50px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 1em;
+        }
+        input, textarea, select, button {
+            padding: 0.5em;
+            margin-top: 0.5em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 1em;
+            margin-top: 1em;
+            width: 200px;
+            margin-left: 220px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body class="bg-info-subtle">
+    <!--Navbar Start-->
+
+<nav class="navbar navbar-expand-lg p-3 mb-2 p-3 mb-2 bg-info text-white ">
+    <div  class="container-fluid ">
+      <a class="navbar-brand text-white fs-3 " href="/">Rhock Hospital</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end bg-info text-danger-emphasis " tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header text-white border-bottom">
+          <h5 class="offcanvas-title " id="offcanvasDarkNavbarLabel">Spice Delight Bistro</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+          <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+            <li class="nav-item mx-2">
+              <a class="nav-link active text-dark active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                For Patient
+              </a>
+            <ul class="dropdown-menu bg-info-subtle">
+              <li><a class="dropdown-item " href="/test">Test Booking</a></li>
+              
+            </ul>
+            </li>
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Lab Test
+              </a>
+            <ul class="dropdown-menu bg-info-subtle">
+              <li><a class="dropdown-item " href="/blood">Blood Test</a></li>
+              <li><a class="dropdown-item" href="/urine">Urine Text</a></li>
+              <li><a class="dropdown-item" href="/imaging">Imaging Test</a></li>
+              <li><a class="dropdown-item" href="/micro">Microbiology Test</a></li>
+              <li><a class="dropdown-item" href="/patho">Pathology Test</a></li>
+              <li><a class="dropdown-item" href="/genetic">Genetic Test</a></li>
+              <li><a class="dropdown-item" href="/cardiac">Cardiac Test</a></li>
+              <li><a class="dropdown-item" href="/infectious">Infectious Disease Test</a></li>
+  
+            </ul>
+            </li>
+           
+            <li class="nav-item mx-1">
+              <a class="nav-link text-white " aria-current="page" href="/service">Service</a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link text-white " aria-current="page" href="/test">Book a Test</a>
+            </li>
+            <li class="nav-item mx-1">
+                <a class="nav-link text-white " aria-current="page" href="/about">About Us</a>
+              </li>
+              
+              <li class="nav-item mx-1">
+                <a class="nav-link text-white " aria-current="page" href="/contact">Contact Us</a>
+              </li>
+              
+              
+              
+            </li>
+          </ul>
+        <!--Login-->
+          <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-2"> 
+            <a href="/login" class="text-info text-decoration-none px-3 py-2  rounded-4" style="background-color: beige;">Login</a>
+          
+          </div>
+        </div>
+      </div> 
+    </div>
+  </nav>
+  <!--NavBar End-->
+    <header>
+        <h1  class="text-info">Home Sample Collection Registration</h1>
+    </header>
+    <main>
+        <h2>Register for Home Sample Collection</h2>
+        <form action="/submit_registration" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email-ID:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Home Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <label for="date">Preferred Collection Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Preferred Collection Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="test">Select Test(s):</label>
+            <select id="test" name="test[]" multiple required>
+                <option value="blood_test">Blood Test</option>
+                <option value="urine_test">Urine Test</option>
+                <option value="covid_test">COVID-19 Test</option>
+                <option value="stool_test">Pathology Test</option>
+                <option value="other">Other</option>
+            </select>
+
+            <button type="submit">Submit Registration</button>
+        </form>
+    </main>
+  
+<%-include('footer')%>

@@ -1,0 +1,472 @@
+<%-include('header')%>
+<style>
+  .text{
+  margin-top:20px;
+}
+@media screen and (max-width:600px) {
+  .text{
+    margin-top: 300px;
+  }
+
+  
+}
+
+
+.bi1{
+    margin-top:-18px;
+    }
+
+.text1{
+  margin-top: 20px;
+}
+.card .card-img-top{
+  border-radius: 200px;
+}
+
+@media screen and (max-width:600px) {
+  
+  .text1{
+    margin-top: px;
+    text-align: center;
+  }
+
+  .card:not(:first-child){
+    display: none;
+  }
+  
+}
+.cards{
+  height: 400px;
+  width: 200px;
+}
+.gop{
+  padding-left: 150px;
+}
+@media screen and (max-width:600px) {
+  .cards{
+    display: block;
+  margin-top: 100px;
+  
+}
+.gop{
+  display: block;
+  margin-top:-100px;
+  margin-left: -50px;
+}
+}
+
+.card2{
+  margin-left: 85px;
+}
+
+.text2{
+  text-align: center;
+}
+@media screen and (max-width:600px){
+
+  .card2{
+  margin-left: 48px;
+}
+.card2:not(:first-child){
+  display: none;
+}
+
+}
+</style>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+<body class="bg-info-subtle home">
+<!--Navbar Start-->
+
+<nav class="navbar navbar-expand-lg p-3 mb-2 p-3 mb-2 bg-info text-white ">
+  <div  class="container-fluid ">
+    <a class="navbar-brand text-white fs-3 " href="/">Rhock Hospital</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end bg-info text-danger-emphasis " tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header text-white border-bottom">
+        <h5 class="offcanvas-title " id="offcanvasDarkNavbarLabel">Spice Delight Bistro</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+        <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+          <li class="nav-item mx-2">
+            <a class="nav-link active text-dark active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              For Patient
+            </a>
+          <ul class="dropdown-menu bg-info-subtle">
+            <li><a class="dropdown-item " href="/test">Test Booking</a></li>
+            
+          </ul>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Lab Test
+            </a>
+          <ul class="dropdown-menu bg-info-subtle">
+            <li><a class="dropdown-item " href="/blood">Blood Test</a></li>
+            <li><a class="dropdown-item" href="/urine">Urine Text</a></li>
+            <li><a class="dropdown-item" href="/imaging">Imaging Test</a></li>
+            <li><a class="dropdown-item" href="/micro">Microbiology Test</a></li>
+            <li><a class="dropdown-item" href="/patho">Pathology Test</a></li>
+            <li><a class="dropdown-item" href="/genetic">Genetic Test</a></li>
+            <li><a class="dropdown-item" href="/cardiac">Cardiac Test</a></li>
+            <li><a class="dropdown-item" href="/infectious">Infectious Disease Test</a></li>
+
+          </ul>
+          </li>
+         
+          <li class="nav-item mx-1">
+            <a class="nav-link text-white " aria-current="page" href="/service">Service</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link text-white " aria-current="page" href="/test">Book a Test</a>
+          </li>
+          <li class="nav-item mx-1">
+              <a class="nav-link text-white " aria-current="page" href="/about">About Us</a>
+            </li>
+            
+            <li class="nav-item mx-1">
+              <a class="nav-link text-white " aria-current="page" href="/contact">Contact Us</a>
+            </li>
+            
+            
+            
+          </li>
+        </ul>
+      <!--Login-->
+        <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-2"> 
+          <a href="/login" class="text-info text-decoration-none px-3 py-2  rounded-4" style="background-color: beige;">Login</a>
+        
+        </div>
+      </div>
+    </div> 
+  </div>
+</nav>
+<!--NavBar End-->
+
+<!--Slider Start-->
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner " style="margin-top: -8px;">
+    <div class="carousel-item active">
+      <img src="front1.jpg" class="d-block w-100 wt-5" alt="...">
+      
+    </div>
+    <div class="carousel-item">
+      <img src="front2.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption ">
+        <h5 >Our Rooms</h5>
+        
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="front3.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption">
+        <h5>Our Laboratory</h5>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!--Slider End-->
+<!--Service Start-->
+<h2 style="text-align: center; " class="text fw-bold fs-1 text-info">Service</h2><br>
+<div class="container text-center" >
+  <div class="row gap-5 " style="margin-left: 80px; ">
+    <div class="col">
+      <div class="card" style="width: 18rem; height: 12rem; background-color: rgb(167, 255, 159); ">
+        <div class="card-body " >
+         
+          <h5 class="card-title" style="color: darkorange">Lab Tests Offered</h5>
+          <p class="card-text " style="color: orange;">Comprehensive list of tests available (e.g., blood tests, urine tests, genetic testing).</p>
+          <a href="/offered"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"style="color: darkorange" class="bi bi-arrow-right-circle" viewBox="0 0 16 16" >
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+</svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;height: 12rem; background-color: rgb(167, 255, 159);  ">
+        <div class="card-body">
+          <h5 class="card-title"style="color: darkorange">Specialized Doctor</h5>
+          <p class="card-text" style="color: orange;">Any specialized or advanced testing capabilities for your health condition.</p>
+          <a href="/doctor"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"style="color: darkorange" class="bi bi-arrow-right-circle" viewBox="0 0 16 16" >
+            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+          </svg></a>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem; height: 12rem;background-color: rgb(167, 255, 159); ">
+        <div class="card-body">
+          <h5 class="card-title" style="color: darkorange">Role Of Laboratory Services</h5>    
+          <p class="card-text" style="color: orange;">Information on health screenings and preventive tests for the Patients condition.</p>
+          <a href="/role"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"style="color: darkorange" class="bi1 bi-arrow-right-circle" viewBox="0 0 16 16" >
+            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+          </svg></a>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem; height: 12rem;background-color: rgb(167, 255, 159); ">
+        <div class="card-body " >
+          <h5 class="card-title" style="color: darkorange">Online Appointment Booking</h5>
+          <p class="card-text" style="color: orange;">A system for scheduling lab appointments online for Long Distents patients</p>
+          <a href="/test"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"style="color: darkorange" class="bi1 bi-arrow-right-circle" viewBox="0 0 16 16" >
+            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+          </svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem; height: 12rem;background-color: rgb(167, 255, 159); ">
+        <div class="card-body">
+          <h5 class="card-title"style="color: darkorange">Accessing Results</h5>
+          <p class="card-text" style="color: orange;">How patients can access their lab results (e.g., through an online portal).</p>
+          <a href="/result"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" style="color: darkorange" class="bi bi-arrow-right-circle" viewBox="0 0 16 16" >
+            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+          </svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;height: 12rem;background-color: rgb(167, 255, 159); ">
+        <div class="card-body">
+          <h5 class="card-title"style="color: darkorange">Collect Sample at Home</h5>
+          <p class="card-text"style="color: orange;">Collection of Sample Like ('Blood,Urine,DNA,etc..') For Very Sick patients and Old patients.</p>
+          <a href="/sample"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" style="color: darkorange" class="bi bi-arrow-right-circle" viewBox="0 0 16 16" >
+            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+          </svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><br>
+<!--Service End-->
+<!--Doctor Start-->
+<h1 class="text1 text-center text-info">Meet Our Team</h1>
+<div class="carousel1">
+<div id="carouselExampleAutoplaying" class="carousel slide p-5" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="card-group gap-3 ">
+        <div class="card" style="background-color: rgb(167, 255, 159);">
+          <img src="doctor1.avif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Dr. Smith</h5>
+           
+          </div>
+        </div>
+        <div class="card"style="background-color: rgb(167, 255, 159);">
+          <img src="doctor2.avif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Dr. Jones</h5>
+            
+          </div>
+        </div>
+        <div class="card"style="background-color: rgb(167, 255, 159);">
+          <img src="doctor3.avif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Dr. Williams</h5>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="card-group gap-3 ">
+        <div class="card" style="background-color: rgb(167, 255, 159);">
+          <img src="doctor4.avif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Dr. Rachel Adams</h5>
+           
+          </div>
+        </div>
+        <div class="card" style="background-color: rgb(167, 255, 159);">
+          <img src="doctor5.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Dr. Michael Brown</h5>
+            
+          </div>
+        </div>
+        <div class="card" style="background-color: rgb(167, 255, 159);">
+          <img src="doctor6.avif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Dr. Sarah Lee</h5>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="card-group gap-3">
+        <div class="card" style="background-color: rgb(167, 255, 159);">
+          <img src="doctor7.avif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Dr. David Jones</h5>
+           
+          </div>
+        </div>
+        <div class="card" style="background-color: rgb(167, 255, 159);">
+          <img src="doctor8.avif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Dr. Robert Williams</h5>
+            
+          </div>
+        </div>
+        <div class="card" style="background-color: rgb(167, 255, 159);">
+          <img src="doctor9.avif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Dr. Julia</h5>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="card-group gap-3">
+        <div class="card" style="background-color: rgb(167, 255, 159);">
+          <img src="doctor10.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Dr. Jackson</h5>
+           
+          </div>
+        </div>
+        <div class="card" style="background-color: rgb(167, 255, 159);">
+          <img src="doctor11.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Dr. Sophia</h5>
+            
+          </div>
+        </div>
+        <div class="card" style="background-color: rgb(167, 255, 159);">
+          <img src="doctor12.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Dr. Amelia</h5>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+</div>
+
+<!--Doctor End-->
+
+<!--Testimonials Start-->
+<h1 class="text2 text-info">Our Clients</h1>
+<div id="carouselExampleSlidesOnly" class="carousel slide p-5" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="card-group gap-3">
+        <div class="card2" style="width: 18rem;">
+          <img src="patient1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Jeny</h5>
+            <p class="card-text">"The care I received was exceptional and compassionate. Every staff member was attentive and made me feel comfortable throughout my stay."</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+        <div class="card2" style="width: 18rem;">
+          <img src="patients2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Abishek</h5>
+            <p class="card-text">"The care I received was exceptional and compassionate. Every staff member was attentive and made me feel comfortable throughout my stay."</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+        <div class="card2" style="width: 18rem;">
+          <img src="patients3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Jully</h5>
+            <p class="card-text">"The care I received was exceptional and compassionate. Every staff member was attentive and made me feel comfortable throughout my stay."</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="card-group gap-3">
+        <div class="card2" style="width: 18rem;">
+          <img src="patients4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ragul</h5>
+            <p class="card-text">"The care I received was exceptional and compassionate. Every staff member was attentive and made me feel comfortable throughout my stay."</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+        <div class="card2" style="width: 18rem;">
+          <img src="patients5.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ashok</h5>
+            <p class="card-text">"The care I received was exceptional and compassionate. Every staff member was attentive and made me feel comfortable throughout my stay."</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+        <div class="card2" style="width: 18rem;">
+          <img src="patients6.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Jackson</h5>
+            <p class="card-text">"The care I received was exceptional and compassionate. Every staff member was attentive and made me feel comfortable throughout my stay."</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="card-group gap-3">
+        <div class="card2" style="width: 18rem;">
+          <img src="patients7.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Nancy</h5>
+            <p class="card-text">"The care I received was exceptional and compassionate. Every staff member was attentive and made me feel comfortable throughout my stay."</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+        <div class="card2" style="width: 18rem;">
+          <img src="patient9.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ruth</h5>
+            <p class="card-text">"The care I received was exceptional and compassionate. Every staff member was attentive and made me feel comfortable throughout my stay."</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+        <div class="card2" style="width: 18rem;">
+          <img src="patients2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ram</h5>
+            <p class="card-text">"The care I received was exceptional and compassionate. Every staff member was attentive and made me feel comfortable throughout my stay."</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+    </div>
+  </div>
+  </div>
+  
+</div>
+
+</div>
+<!--Testimonials End-->
+
+
+
+<%-include('footer')%>

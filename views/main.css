@@ -1,0 +1,226 @@
+
+
+.container {
+    
+    position: absolute;
+   margin-top: 50px;
+   margin-left: 130px;
+  }
+  .text{
+    margin-top: 520px;
+    text-align: center;
+  }
+  @media screen  and (max-width: 600px){
+    .card1{
+      display:block;
+      
+    }
+    
+    .container {
+    
+        margin-top: 0px;
+        margin-left: 80px;
+
+        
+      }
+      .col{
+        margin-top: 40px;
+      }
+      .text{
+        margin-top: 300px;
+      }
+    
+  }
+
+.bi1{
+    margin-top:-18px;
+    }
+
+.text1{
+  margin-top: 540px;
+  text-align: center;
+}
+.card .card-img-top{
+  border-radius: 200px;
+}
+
+@media screen and (max-width:600px) {
+  .text1{
+    margin-top: 1680px;
+    text-align: center;
+  }
+
+  .card:not(:first-child){
+    display: none;
+  }
+  
+}
+.cards{
+  height: 400px;
+  width: 200px;
+}
+.gop{
+  padding-left: 150px;
+}
+@media screen and (max-width:600px) {
+  .cards{
+    display: block;
+  margin-top: 100px;
+  
+}
+.gop{
+  display: block;
+  margin-top:-100px;
+  margin-left: -50px;
+}
+}
+
+.card2{
+  margin-left: 85px;
+}
+
+.text2{
+  text-align: center;
+}
+@media screen and (max-width:600px){
+
+  .card2{
+  margin-left: 48px;
+}
+.card2:not(:first-child){
+  display: none;
+}
+
+}
+
+
+.foot{
+ margin-left: -40px;
+ width: 1329px;
+  margin-bottom: -40px;
+}
+@media screen and (max-width:600px) {
+  .foot{
+    margin-left: -40px;
+     width: 467px;
+     margin-bottom: -40px;
+   }
+  
+}
+
+<!--login-->
+.log{
+    height: 96vh;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.form{
+    width: 25rem;
+    height: 28rem;
+    margin-top: 100px;
+    margin-left: 470px;
+    display: flex;
+    flex-direction: column;
+    background: rgb(255, 255, 255,0.06);
+    box-shadow: 0 8px 32px 0 rgb(31, 38, 135 ,.37);
+    border-radius: 30px;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+
+} 
+.form::before{
+    content: '';
+    position: absolute;
+    bottom: 3%;
+    right: 28%;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(rgb(0, 204, 255),rgb(116, 227, 255));
+    border-radius: 50%;
+    z-index: -1;
+    opacity: .5;
+}
+.form::after{
+    content: '';
+    position: absolute;
+    top: 8%;
+    left: 32%;
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(rgb(0, 204, 255),rgb(116, 227, 255));
+    border-radius: 50%;
+    z-index: -1;
+    opacity: .5;
+}
+.h1{
+    
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    text-shadow: 2px 2px 4px rgb(68, 66, 66);
+    margin-bottom: 4px;
+    opacity: .9;
+}
+.label{
+    margin-top:20px;
+    font-size: 20px;
+    color: black;
+    margin-left: 10%;
+    text-shadow:2px 2px 4px rgb(68, 66, 66); 
+}
+.label0{
+    margin-top: 10px;
+    font-size: 20px;
+    color: black;
+    margin-left: 10%;
+    text-shadow:2px 2px 4px rgb(68, 66, 66); 
+}
+.input{
+    width: 80%;
+    margin: 5% auto ;
+    margin-bottom: 8%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    border-bottom: 1px solid;
+    opacity: .8;
+}
+#eye{
+    position: relative;
+    width: 30px;
+    height: 20px;
+    margin-top: -50px;
+    margin-left: 345px;
+
+}
+.button{
+    width: 35%;
+    height: 8%;
+    margin: 5% auto;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    opacity: .8;
+    background:  rgb(68, 66, 66,0.06);
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    text-shadow: 2px 2px 4px rgb(68, 66, 66,0.3);
+    box-shadow: 3px 3px 5px  rgb(31, 38, 135 ,.37);
+    border-left: 1px solid rgb(255, 255, 255,.5);
+    border-top: 1px solid rgb(255, 255, 255,.5);
+}
+.a{
+    
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    opacity: .8;
+}
